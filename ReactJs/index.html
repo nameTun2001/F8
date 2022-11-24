@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReactJS</title>
+  <!-- link ReactJS -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <!-- link JS  -->
+  <link rel="stylesheet" href="./main.js">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    const h1Item = React.createElement(
+      "h1",
+      {
+        title: "Hello",
+        className: "heading",
+      },
+      "Hello guys"
+    );
+
+    ReactDOM.render(h1Item, root);
+
+    const listItem = React.createElement(
+      "ul",
+      null,
+      React.createElement("li", null, "Javascript"),
+      React.createElement("li", null, "ReactJS")
+    );
+
+    ReactDOM.render(listItem, root);
+  </script>
+</body>
+
+</html>
